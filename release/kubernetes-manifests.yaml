@@ -269,7 +269,8 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/frontend:v0.3.9
+          imagePullPolicy: Never
+          image: local-image #gcr.io/google-samples/microservices-demo/frontend:v0.3.9
           ports:
           - containerPort: 8080
           readinessProbe:
